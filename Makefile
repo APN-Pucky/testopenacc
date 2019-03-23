@@ -5,8 +5,8 @@ CXX_SRC := $(wildcard *.cpp)
 CXX_OBJ := $(patsubst %.cpp, obj-cxx/%.o,$(CXX_SRC))
 
 
-OACC_FLAGS := -fopenacc
-FLAGS := -O2
+OACC_FLAGS := -fopenacc -lgomp 
+FLAGS := -O2 -fopenmp
 
 default: c cpp
 
