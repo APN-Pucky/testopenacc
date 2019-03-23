@@ -5,7 +5,7 @@ int main( int argc, char* argv[] )
 {
 
     // Size of vectors
-    int n = 100000000;
+    int n = 10000000;
 
     // Input vectors
     double *restrict a;
