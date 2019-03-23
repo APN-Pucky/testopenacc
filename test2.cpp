@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 
 	std::cout << "Number of devices: " << omp_get_num_devices() << std::endl;
 	std::cout << "Default device: " << omp_get_default_device() << std::endl;
-
+/*
 	bool offload;
 #pragma omp target defaultmap(tofrom:scalar)
 	offload = !omp_is_initial_device();
@@ -27,6 +27,6 @@ int main(int argc, char** argv)
 
 	// Cleanup
 	omp_target_free(buffer, device);
-
+*/
 	return 0;
 }
