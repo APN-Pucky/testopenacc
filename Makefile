@@ -6,7 +6,7 @@ CXX_OBJ := $(patsubst %.cpp, obj-cxx/%.o,$(CXX_SRC))
 
 
 OACC_FLAGS := -fopenacc -lgomp 
-FLAGS := -O2 -fopenmp
+FLAGS := -O2 
 
 default: c cpp
 
